@@ -1,35 +1,35 @@
 class User {
 
     // private variables
-    #id;
-    #username;
-    #exerciseLog = [];
+    id;
+    username;
+    exerciseLog = [];
 
     // constructor
     constructor(id, username) {
-        this.#id = id;
-        this.#username = username;
+        this.id = id;
+        this.username = username;
     }
 
     // GETTERS
     get id() {
-        return this.#id;
+        return this.id;
     }
 
     get username() {
-        return this.#username;
+        return this.username;
     }
 
     get exerciseCount() {
-        return this.#exerciseLog.length;
+        return this.exerciseLog.length;
     }
 
     get exerciseLog() {
-        return this.#exerciseLog;
+        return this.exerciseLog;
     }
 
     addExercise(exercise) {
-        this.#exerciseLog.push(exercise)
+        this.exerciseLog.push(exercise)
     }
 }
 
