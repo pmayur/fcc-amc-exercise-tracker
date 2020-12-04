@@ -19,6 +19,8 @@ app.use(bodyParser.urlencoded({
 // API's
 app.use('/api/exercise/new-user', require('./router/new-user'))
 app.use('/api/exercise/users', require('./router/get-users'))
+app.use('/api/exercise/add', require('./router/add-exercise'))
+
 
 
 
