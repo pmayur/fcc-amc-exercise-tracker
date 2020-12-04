@@ -18,6 +18,8 @@ app.use(bodyParser.urlencoded({
 
 // API's
 app.use('/api/exercise/new-user', require('./router/new-user'))
+app.use('/api/exercise/users', require('./router/get-users'))
+
 
 
 const listener = app.listen(process.env.PORT || 3000, () => {
