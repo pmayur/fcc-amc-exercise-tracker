@@ -16,6 +16,8 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+// API's
+app.use('/api/exercise/new-user', require('./router/new-user'))
 
 
 const listener = app.listen(process.env.PORT || 3000, () => {
