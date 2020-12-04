@@ -23,6 +23,18 @@ class Exercise {
             "date": this.#date
         }
     }
+
+    get date() {
+        return this.#date
+    }
+
+    get description() {
+        return this.#description
+    }
+
+    get duration() {
+        return this.#duration
+    }
 }
 
 module.exports = Exercise;
