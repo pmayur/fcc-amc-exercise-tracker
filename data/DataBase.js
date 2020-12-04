@@ -29,8 +29,18 @@ class DataBase {
         return true;
     }
 
-    get size() { 
-        return this.#store.size
+    get allUsersList() {
+
+        let usersList = [];
+
+        this.#store.forEach((user) => {
+            usersList.push({
+                "_id": user.id,
+                "username": user.username
+            })
+        })
+
+        return usersList
     }
 }
 
