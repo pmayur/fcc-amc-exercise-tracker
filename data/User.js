@@ -27,6 +27,10 @@ class User {
     get exerciseLog() {
         return this.#exerciseLog;
     }
+
+    addExercise(exercise) {
+        this.#exerciseLog.push(exercise)
+    }
 }
 
 module.exports = User;
