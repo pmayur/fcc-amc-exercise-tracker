@@ -88,6 +88,7 @@ router.post("/", (req, res) => {
         "_id": addedUser.id,
         "username": addedUser.username,
         "date": addedUserLatestExercise.date.toDateString(),
+        "duration": addedUserLatestExercise.duration,
         "description": addedUserLatestExercise.description
     })
 
